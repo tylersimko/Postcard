@@ -91,6 +91,15 @@
                                     <rect key="frame" x="16" y="87" width="288" height="46"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTF-t6-BAV">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="170" width="141" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-Sk-DZX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5607666396067954" blue="0.36926646370457583" alpha="1" colorSpace="calibratedRGB"/>
@@ -112,6 +121,7 @@
                                 <exclude reference="HyM-70-EL7"/>
                                 <exclude reference="7dO-9z-c3m"/>
                                 <exclude reference="VfF-ae-OHF"/>
+                                <exclude reference="LTF-t6-BAV"/>
                                 <exclude reference="Wbv-Sk-DZX"/>
                             </mask>
                         </variation>
@@ -121,6 +131,7 @@
                                 <include reference="HyM-70-EL7"/>
                                 <include reference="7dO-9z-c3m"/>
                                 <include reference="VfF-ae-OHF"/>
+                                <include reference="LTF-t6-BAV"/>
                                 <include reference="Wbv-Sk-DZX"/>
                             </mask>
                         </variation>
@@ -130,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="HyM-70-EL7" id="N6k-al-aKq"/>
                         <outlet property="mailButton" destination="Wbv-Sk-DZX" id="00w-2v-Ws4"/>
                         <outlet property="messageLabel" destination="VfF-ae-OHF" id="4hn-7e-mVL"/>
+                        <outlet property="nameLabel" destination="LTF-t6-BAV" id="sTg-Yw-kIK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

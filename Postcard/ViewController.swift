@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mailButton: UIButton!
     //connected to change button text
     @IBOutlet weak var messageLabel: UILabel!
@@ -28,10 +29,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBAction func sendMailButtonPressed(sender: UIButton) {
         messageLabel.hidden = false
+        nameLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
         enterMessageTextField.text = ""
+        nameLabel.text = enterNameTextField.text
+        enterNameTextField.text = ""
         enterMessageTextField.resignFirstResponder()
         messageLabel.textColor = UIColor.redColor()
+        nameLabel.textColor = UIColor.blueColor()
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
     }
     //code will evaluate when we press button
