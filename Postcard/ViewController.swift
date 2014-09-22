@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var mailButton: UIButton!
+    //connected to change button text
     @IBOutlet weak var messageLabel: UILabel!
 
     @IBOutlet weak var enterMessageTextField: UITextField!
